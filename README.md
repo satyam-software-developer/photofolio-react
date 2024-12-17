@@ -28,7 +28,7 @@ PhotoFolio is a React application that allows users to create and manage photo a
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/photofolio.git
+   git clone https://github.com/satyam-software-developer/photofolio-react.git
    cd photofolio
    ```
 
