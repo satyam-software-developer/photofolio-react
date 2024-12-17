@@ -1,0 +1,171 @@
+.imageslistmain {
+  /* Main container for the images list section, centering the content horizontally
+       and setting a maximum width to ensure the layout is not too wide. */
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.imageslistmain .top {
+  /* Styling for the top section of the images list, using flexbox to align items
+       in the center and space them out evenly. The margin-block adds vertical spacing. */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 30px;
+  /* Uncomment the border property to visualize the layout during development */
+  /* border: 2px solid green; */
+}
+
+.imageslistmain .top .back {
+  /* Styling for the back button, setting a fixed width for consistency. */
+  width: 30px;
+}
+
+.imageslistmain .top .search {
+  /* Styling for the search button, setting a pointer cursor on hover 
+       and a fixed width for consistency. */
+  cursor: pointer;
+  width: 30px;
+}
+
+.imageslistmain .addingimg {
+  /* Styling for the button used to add new images, with a light blue background,
+       blue border, and bold blue text. The button has padding, rounded corners, 
+       and a pointer cursor on hover. */
+  background-color: rgba(0, 119, 255, 0.1);
+  border: 2px solid #07f;
+  border-radius: 5px;
+  color: #07f;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.imageslistmain .bottom {
+  /* Styling for each image container in the images list, with a white background,
+       rounded corners, and a box shadow for a subtle 3D effect. The container is 
+       positioned relatively to allow for absolutely positioned elements inside. 
+       Flexbox is used for layout, and the margin-left adds spacing between items. */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  width: 25%;
+  display: flex;
+  margin-left: 15px;
+}
+
+.imageslistmain .bottom .edit,
+.imageslistmain .bottom .delete {
+  /* Styling for the edit and delete buttons within the image container. 
+       They are hidden by default (opacity 0) and are positioned absolutely 
+       relative to the bottom container. The transition ensures a smooth appearance 
+       when the buttons become visible. */
+  border: none;
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  transition: 0.3s;
+  width: 35px;
+}
+
+.imageslistmain .bottom .delete {
+  /* Additional styling for the delete button, positioning it slightly further 
+       to the right compared to the edit button. */
+  right: -10px;
+}
+
+.imageslistmain .bottom:hover .edit,
+.imageslistmain .bottom:hover .delete {
+  /* Show the edit and delete buttons when hovering over the image container,
+       by changing the opacity to 1. */
+  opacity: 1;
+}
+
+.imageslistmain .bottom .bottomimg {
+  /* Styling for the image inside the image container, ensuring it covers 
+       most of the container's height while maintaining aspect ratio. 
+       The image is set to cover the entire width of the container. */
+  height: 80%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.imageslistmain .imageslistform {
+  /* Styling for the form used to add or edit images, with a light grey background,
+       rounded corners, and a box shadow for a subtle 3D effect. The form uses flexbox 
+       to arrange its elements vertically, with gaps between them. The form is centered 
+       horizontally and has padding for spacing. */
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px auto 30px;
+  padding: 20px;
+  width: 50vw;
+}
+
+.imageslistmain .imageslistform h1 {
+  /* Styling for the form title, setting a larger font size and bold weight. */
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.imageslistmain .imageslistform .title,
+.imageslistmain .imageslistform .imgurl {
+  /* Styling for the text input fields in the form, with rounded corners, padding,
+       and a smooth transition effect for any changes. The outline is removed for 
+       a cleaner look, and the font size is set for better readability. */
+  border: 3px solid transparent;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  outline: none;
+  padding: 10px 10px 10px 15px;
+  transition: 0.3s;
+}
+
+.imageslistmain .imageslistform .imageslistbtn {
+  /* Styling for the container holding the form buttons, making it a block element. */
+  display: block;
+}
+
+.imageslistmain .imageslistform .clear,
+.imageslistmain .imageslistform .add {
+  /* Styling for the form buttons (clear and add), with a bold font, 
+       rounded corners, and a box shadow for a subtle 3D effect. 
+       The background color and padding are set for a button-like appearance. */
+  background-color: #ff1300;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  padding-block: 7px;
+  width: 100px;
+}
+
+.imageslistmain .imageslistform .add {
+  /* Additional styling for the add button, changing the background color 
+       and adding margin-left for spacing between buttons. */
+  background-color: #07f;
+  margin-left: 20px;
+}
+
+.showimg {
+  /* Styling for the container displaying images, using flexbox 
+       to arrange items in a row. */
+  display: flex;
+}

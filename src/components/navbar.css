@@ -1,0 +1,19 @@
+.footer {
+  height: 75px; /* Sets the height of the footer */
+  width: 100%; /* Makes the footer take up the full width of the page */
+  display: flex; /* Uses flexbox layout to arrange its child elements */
+  background-color: lightblue; /* Sets the background color of the footer */
+}
+
+.footer img {
+  height: 60px; /* Sets the height of the images inside the footer */
+  width: 60px; /* Sets the width of the images inside the footer */
+  margin: 15px; /* Adds a 15px margin around the images */
+}
+
+.text {
+  font-size: 1.6rem; /* Sets the font size of the text inside the footer */
+  font-weight: 700; /* Sets the font weight to 700, making the text bold */
+  /* color: white; */ /* This line is commented out, but if enabled, it would change the text color to white */
+  margin-top: 25px; /* Adds a 25px margin at the top of the text */
+}

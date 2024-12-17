@@ -1,0 +1,99 @@
+.form {
+    /* Container for the form, setting background color, border radius for rounded corners,
+       and box-shadow for a slight shadow effect. The form is centered with margin auto and
+       has padding for internal spacing. The width is set to 50% of the viewport width. */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px auto 30px;
+    padding: 20px;
+    width: 50vw;
+  }
+  
+  .form h1 {
+    /* Styling for the form title, with a larger font size and bold weight */
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  
+  .form input {
+    /* Styling for input fields within the form. Includes border-radius for rounded corners,
+       font size and weight, padding for internal spacing, and a transition effect on focus.
+       The width is set to 55% of the parent container. */
+    border: 3px solid transparent;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    outline: none;
+    padding: 10px 10px 10px 15px;
+    transition: 0.3s;
+    width: 55%;
+  }
+  
+  .form .input {
+    /* Container for the input elements, aligning items centrally with flexbox. 
+       It includes space between elements and justifies content evenly across the container. */
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  
+  .form .input .clear {
+    /* Styling for the "Clear" button. Includes background color, text color, border radius,
+       box-shadow for a slight shadow effect, and padding. The button has a pointer cursor and 
+       bold text. */
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    padding-block: 7px;
+    width: 100px;
+    background-color: #ff1300;
+  }
+  
+  .form .input .create {
+    /* Styling for the "Create" button, similar to the "Clear" button but with a different 
+       background color. */
+    background-color: #07f;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    outline: none;
+    padding-block: 7px;
+    width: 100px;
+  }
+  
+  .cancel {
+    /* Styling for the "Cancel" button. It has a light transparent blue background, 
+       blue border, and text color, with padding and border radius for rounded corners. 
+       The cursor changes to a pointer on hover. */
+    background-color: rgba(0, 119, 255, 0.1);
+    border: 2px solid #07f;
+    border-radius: 5px;
+    color: #07f;
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    padding: 5px 10px;
+    
+    /* Additional styling that overrides the initial blue color with red, including the
+       background color, border, and text color. The margin-left shifts the button to 
+       the right side of the form. */
+    background-color: rgba(255, 19, 0, 0.1);
+    border: 2px solid #ff1300;
+    color: #ff1300;
+    margin-left: 70%;
+  }
+  

@@ -1,13 +1,39 @@
+/* Apply styling to the body element */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 0; /* Remove default margin around the body element */
+  
+  /* Set the font family for the body text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* 
+    -apple-system: Uses the system font on Apple devices (San Francisco).
+    BlinkMacSystemFont: Uses the system font on macOS (San Francisco).
+    "Segoe UI": Uses the default font on Windows (Segoe UI).
+    "Roboto": A widely used sans-serif font on Android and other platforms.
+    "Oxygen": A font designed for use on the Linux desktop environment.
+    "Ubuntu": The default font for the Ubuntu operating system.
+    "Cantarell": The default font for GNOME desktop environment.
+    "Fira Sans": A clean sans-serif font designed by Mozilla.
+    "Droid Sans": A sans-serif font designed for the Android platform.
+    "Helvetica Neue": A widely used sans-serif font for macOS.
+    sans-serif: A generic fallback font family to use if none of the above are available.
+  */
+  
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on WebKit browsers (e.g., Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering on Firefox for macOS */
 }
 
+/* Apply styling to code elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  /* 
+    source-code-pro: A monospaced font designed specifically for coding.
+    Menlo: A monospaced font used as the default in macOS Terminal.
+    Monaco: A monospaced font used in older versions of macOS.
+    Consolas: A monospaced font used in Microsoft Visual Studio and other coding environments.
+    "Courier New": A classic monospaced font that comes pre-installed on many systems.
+    monospace: A generic fallback font family to use if none of the above are available.
+  */
 }

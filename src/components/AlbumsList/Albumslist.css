@@ -1,0 +1,89 @@
+.albumslistmain {
+  /* Main container for the album list section, using flexbox to center items
+       and space them out evenly. The margin-top adds space above the section. */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.albumslistmain .text {
+  /* Styling for the text within the album list section, setting font size and weight
+       for a bold, prominent appearance. */
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.albumslistmain .addbtn {
+  /* Styling for the button used to add new albums, with a light blue background,
+       blue border, and bold blue text. The button has padding, rounded corners, and 
+       a pointer cursor on hover. */
+  background-color: rgba(0, 119, 255, 0.1);
+  border: 2px solid #07f;
+  border-radius: 5px;
+  color: #07f;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 5px 10px;
+  margin-right: 15px;
+}
+
+.grid {
+  /* Grid layout for displaying albums, using CSS Grid. It has a gap between grid items,
+       a set height for each grid row, and a responsive column layout that adapts to the available 
+       space. The margin provides spacing around the grid container. */
+  grid-gap: 30px;
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: row;
+  grid-auto-rows: 150px;
+  grid-template: repeat(1, 150px) / repeat(auto-fit, minmax(150px, 0.5fr));
+  margin-bottom: 100px;
+  margin: 10px;
+}
+
+.container {
+  /* Styling for each album container, using flexbox to center content vertically 
+       and horizontally. It has a border, rounded corners at the top, and a pointer 
+       cursor. The container's height is set to fill its grid cell, with content 
+       aligned to the bottom. The transition adds a smooth effect when the border color changes. */
+  align-items: center;
+  border: 5px solid #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  margin-block: 30px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.container:hover {
+  /* Styling applied when hovering over the album container, changing the background color to light grey. */
+  background-color: lightgrey;
+}
+
+.container img {
+  /* Styling for the image within the album container, setting a fixed width 
+       and adding space below the image. */
+  margin-bottom: 30px;
+  width: 50px;
+}
+
+.container span {
+  /* Styling for the text within the album container, with a background color,
+       bold font, centered text, and padding. The text stretches across the entire 
+       width of the container. The transition adds a smooth effect on changes. */
+  background-color: #eee;
+  font-size: 1.1rem;
+  font-weight: 700;
+  justify-self: baseline;
+  padding-block: 5px;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+}

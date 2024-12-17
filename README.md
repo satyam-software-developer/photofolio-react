@@ -1,3 +1,66 @@
+# PhotoFolio
+
+PhotoFolio is a React application that allows users to create and manage photo albums. Users can add albums, upload images to albums, and view the images in a grid format.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Code Overview](#code-overview)
+- [License](#license)
+
+## Features
+
+- **Create Albums**: Users can create new photo albums.
+- **Manage Images**: Users can add, edit, and delete images within albums.
+- **View Albums and Images**: Users can view a list of albums and the images contained in each album.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **Firebase**: For backend services including Firestore for data storage.
+- **React Toastify**: For displaying toast notifications.
+- **CSS**: For styling the application.
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/photofolio.git
+   cd photofolio
+   ```
+
+## Code Overview
+
+1. \*\*src/App.js
+   The main component that includes the Navbar, Albumslist, and Imageslist components. It acts as the entry point of the application.
+
+2. src/components/AlbumForm/AlbumForm.js
+   A component for creating new albums. It uses a form to gather album details and interacts with Firebase Firestore to add new albums.
+
+3. src/components/AlbumsList/Albumslist.js
+   Displays a list of albums. Users can toggle the visibility of the album creation form and view a grid of existing albums. It also handles selecting an album to view its images.
+
+4. src/components/ImagesList/Imageslist.js
+   Manages and displays images within a selected album. Users can add, edit, or delete images. It also includes a form for adding new images.
+
+5. src/firebaseinit.js
+   Contains Firebase initialization and configuration. This file sets up the Firestore database for use within the application.
+
+6. src/index.js
+   The entry point of the React application. It renders the App component into the root element of the HTML file and includes setup for React's Strict Mode.
+
+7. src/index.css
+   G lobal styles for the application, including font settings and basic styling for code elements.
+
+8. src/components/Navbar/navbar.css
+   Styles for the navigation bar, which is currently used as a footer with a logo and application name.
+
+9. src/components/ImagesList/Imageslist.css
+   Styles for the images list component, including layout and button styling.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

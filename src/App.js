@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
+// export default App;
+// Importing necessary components from their respective file paths
+import Navbar from "./components/Navbar"; // Importing the Navbar component
+import Albumslist from "./components/AlbumsList/AlbumsList"; // Importing the Albumslist component
+
+
+// Defining the main App component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Rendering the Navbar component */}
+      <Navbar />
+
+      {/* The Albumform component is commented out and not currently rendered */}
+      {/* <Albumform /> */}
+
+      {/* Rendering the Albumslist component */}
+      <Albumslist />
+
+      {/* The Imageslist component is also commented out and not currently rendered */}
+      {/* <Imageslist /> */}
+    </>
   );
 }
 
+// Exporting the App component as the default export from this module
 export default App;
