@@ -1,3 +1,5 @@
+# Problem statement
+  - https://classroom.codingninjas.com/app/classroom/me/25433/content/694579/offering/11358770
 # PhotoFolio
 
 PhotoFolio is a React application that allows users to create and manage photo albums. Users can add albums, upload images to albums, and view the images in a grid format.
